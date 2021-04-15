@@ -1,0 +1,151 @@
+:root {
+  --color1: #355C7D;
+  --color2: #C06C84;
+  --color3: #C06C84;
+  --color4:#242738;
+  --color5: #213546;
+  --color6: #C06C84;
+  --color7: #fff;
+  --color8: #00000040;
+  --color9: #C06C84;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 100%);
+}
+
+.theme-menu {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  height: 120px;
+  width: 150px;
+}
+
+.theme-menu img {
+  width: 1.2rem;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  margin-top: -1rem;
+  background: #fff;
+  display: none;
+  height: 120px;
+  width: 150px;
+}
+
+.dropdown-menu p {
+  margin: 1.2rem auto;
+  cursor: pointer;
+}
+
+.dropdown-menu.visible {
+  display: block;
+}
+
+h1 {
+  font-weight: 500;
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.music-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color7);
+  margin: 3rem auto 0 auto;
+  width: 100%;
+  max-width: 500px;
+  background: var(--color4);
+  padding: 2rem 0 4rem 0;
+  box-shadow: 0px 20px 20px 0px var(--color5);
+}
+
+.music-box #song-cover {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid var(--color9);
+}
+
+.music-text {
+  margin-top: 1.5rem;
+}
+
+.music-text h2 {
+  font-weight: 500;
+}
+
+.music-text h3 {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.progress-bar-container {
+  background: var(--color6);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2.2rem 0;
+  height: 4px;
+  width: 90%;
+}
+
+.progress-bar {
+  background-color: var(--color7);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.music-controls {
+  padding: 1.4rem 0;
+  background: var(--color3);
+  box-shadow: 0px 0px 4px 3px var(--color8);
+  border-radius: 50px;
+  width: 90%;
+}
+
+.control-button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1.2rem;
+  border: 0;
+  cursor: pointer;
+}
+
+#previous {
+  background: url('/img/backward-solid.svg') no-repeat center;
+  
+}
+
+#play-pause {
+  background: url('/img/play-solid.svg') no-repeat center;
+}
+
+#next {
+  background: url('/img/forward-solid.svg') no-repeat center;
+}
