@@ -115,6 +115,7 @@ const root = document.documentElement;
 // Displaying menu
 menuButton.addEventListener("click", () => {
   dropdownMenu.classList.toggle("visible");
+  menuButton.classList.toggle("rotated");
 });
 
 // Changing themes
