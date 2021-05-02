@@ -163,3 +163,13 @@ h1 {
 #next {
   background: url("/img/forward-solid.svg") no-repeat center;
 }
+
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+footer a{
+  color: #fff;
+}
